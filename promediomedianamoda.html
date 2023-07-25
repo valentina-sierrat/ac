@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promedio | Mediana | Moda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header__container">
+        <h1>Promedio, Mediana y Moda</h1>
+        <p>
+          En este ejercicio podrás calcular el promedio, mediana y moda de los
+          valores que tu eligas
+        </p>
+      </div>
+
+      <section>
+        <nav>
+          <ol class="header__button">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="descuentos.html">Descuentos</a></li>
+            <li>
+              <a href="promediomedianamoda.html">Promedio, mediana y moda</a>
+            </li>
+          </ol>
+        </nav>
+      </section>
+    </header>
+
+    <section class="main__container">
+      <section class="main__container-card">
+        <h2>Calcula tu promedio:</h2>
+        <form>
+          <label for="inputPromedio">Ingresa tus datos: </label>
+          <input id="inputPromedio" type="text" placeholder="Ej: 20, 10, 50" />
+        </form>
+
+        <button type="button" onclick="calcularMediaAritmetica1()">
+          Calcular tu promedio
+        </button>
+        <p id="resultadoMedia"></p>
+      </section>
+      <!-------------------------------------------------->
+
+      <section class="main__container-card">
+        <h2>Calcula tu mediana:</h2>
+        <form>
+          <label for="inputMediana">Ingresa tus datos: </label>
+          <input id="inputMediana" type="text" placeholder="Ej: 20, 10, 50" />
+        </form>
+
+        <button type="button" onclick="calcularMediana()">
+          Calcular la medina
+        </button>
+        <p id="resultadoMediana"></p>
+      </section>
+
+      <section class="main__container-card">
+        <h2>calcular tu moda:</h2>
+        <form>
+          <label for="inputModa"> Ingresa tus datos: </label>
+          <input id="inputModa" type="text" placeholder="Ej: 20, 10, 50" />
+        </form>
+        <button type="button" onclick="calcularModa()">Calcular la moda</button>
+        <p id="resultadoModa"></p>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <p>Desarrollado por Valentina Taylor</p>
+      <br />
+    </footer>
+
+    <script src="promedio.js"></script>
+    <script src="mediana.js"></script>
+    <script src="moda.js"></script>
+  </body>
+</html>
